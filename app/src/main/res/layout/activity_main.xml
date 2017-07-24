@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ryanm.videostream.MainActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://73.236.236.146:8090"/>
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:onClick="onConnect"/>
+    <VideoView
+        android:id="@+id/stream"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
